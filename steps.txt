@@ -1,0 +1,12 @@
+git config --global user.name bruno-martignago
+git config --global user.email brunomartignago106@gmail.com
+
+dotnet new sln --name EtecVeiculos
+
+dotnet new webapi -o EtecVeiculos.Api --use-controllers
+
+dotnet sln add EtecVeiculos.Api\EtecVeiculos.Api.csproj
+
+dotnet new mvc -o EtecVeiculos.UI
+
+dotnet sln EtecVeiculos.UI\EtecVeiculos.UI.csproj
